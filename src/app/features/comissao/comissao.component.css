@@ -6,29 +6,47 @@
 .titulo {
   font-size: 1.6rem;
   margin-bottom: 16px;
-  color: #e0d4ff;
+  color: var(--color-title);
+  text-align: center;
 }
 
 .card {
-  background: #111111;
+  background: var(--color-surface);
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 6px var(--color-card-shadow);
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.9rem;
+  text-align: center;
 }
 
 th,
 td {
   padding: 8px 10px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--color-border);
 }
 
 thead {
-  background: #1b1b1b;
+  background: var(--color-table-header-bg);
+  color: var(--color-table-header-text);
+}
+
+.sem-registro {
+  text-align: center;
+  padding: 12px;
+  opacity: 0.7;
+}
+
+.totais {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--color-title);
+  text-align: center;
 }

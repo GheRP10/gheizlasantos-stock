@@ -1,0 +1,51 @@
+<section class="home-wrapper">
+  <div class="hero-card">
+
+    <header class="hero-header">
+      <p class="hero-badge">Desafio Front-End</p>
+
+      <h1 class="hero-title">
+        GheizlaSantos Stock
+      </h1>
+
+      <h2 class="hero-subtitle">
+        Consulta de Estoque &amp; Ranking de Vendas
+      </h2>
+    </header>
+
+    <div class="hero-body">
+      <p class="hero-description">
+        Esta aplicação simula parte de um sistema de gestão, reunindo dois módulos essenciais do desafio técnico:
+      </p>
+
+      <ul class="hero-list">
+        <li>
+          📦 <strong>Módulo de Estoque:</strong> Permite lançar movimentações, estornar itens e consultar entradas e saídas através de filtros.
+        </li>
+        <li>
+          💰 <strong>Módulo de Comissões:</strong> Calcula automaticamente as comissões de cada venda conforme as regras do desafio e gera o ranking final dos vendedores.
+        </li>
+      </ul>
+    </div>
+
+    <footer class="hero-footer">
+      <button class="hero-btn hero-btn-primary" routerLink="/estoque">
+        📦 Acessar Estoque
+      </button>
+
+      <button class="hero-btn hero-btn-outline" routerLink="/comissao">
+        💰 Ver Ranking de Vendas
+      </button>
+    </footer>
+
+    <p class="hero-tagline">
+      SPA desenvolvida com Angular (Standalone)
+    </p>
+
+    <div class="hero-meta">
+      <span><strong>Gheizla Santos</strong></span>
+      <span>{{ anoDesafio }}</span>
+    </div>
+
+  </div>
+</section>

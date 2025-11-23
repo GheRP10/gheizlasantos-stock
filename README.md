@@ -1,27 +1,88 @@
-# GheizlasantosDesafioEstoqueFrontend
+# GheizlaSantos Stock
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+Aplicação Front-End desenvolvida em **novembro/2025**, em Angular, como resolução de um desafio técnico envolvendo módulos de **Estoque** e **Comissões**.
 
-## Development server
+A proposta consiste em construir uma SPA simples, funcional e organizada, demonstrando domínio de componentes, rotas, serviços, tratamento de dados e experiência de uso.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🚀 Tecnologias utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular 18+** (projeto foi executado com Angular 18)
+- **TypeScript**
+- **HTML5 & CSS3**
+- **Standalone Components**
+- **JSON local como base de dados**
+- **Design System próprio (Dark/Light mode)**
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 📦 Instalação e execução
 
-## Running unit tests
+```bash
+npm install
+ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> O projeto é compatível com Angular **18 ou superior**.
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 📂 Estrutura principal
 
-## Further help
+```
+src/
+ ├── app/
+ │    ├── home/           # HomePage com contextualização e acesso aos módulos
+ │    ├── features/
+ │    │      ├── estoque/ # Módulo de movimentações de estoque
+ │    │      └── comissao/# Módulo de ranking e comissões
+ │    ├── services/       # Serviço de dados (estoque + vendas)
+ │    └── app.component   # Header, tema, rotas
+ ├── assets/              # JSON e ícones
+ └── styles.css           # Tema global (dark/light)
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 📊 Funcionalidades implementadas
+
+### ✔ Módulo de Estoque
+- Lançamento de movimentações  
+- Estorno  
+- Filtro por produto  
+- Atualização dinâmica do saldo por item  
+- Interface responsiva  
+
+### ✔ Módulo de Comissões
+- Regras implementadas:  
+  - 1% para valores entre **R$ 100 e R$ 499,99**  
+  - 5% para valores **a partir de R$ 500**  
+- Cálculo automático por venda  
+- Somatório geral por vendedor  
+- Geração do ranking final  
+- Exibição clara e responsiva  
+
+---
+
+## 📝 Observação
+- Toques pessoais citados abaixo
+
+### ✔ HomePage 
+- Layout inspirado em dashboards  
+- Botões de navegação  
+- Explicação dos módulos  
+- Responsividade 
+
+### ✔ Tema Claro/Escuro
+- Alternância em tempo real  
+- Ícones de sol/lua  
+- Ajuste de contraste para cada módulo  
+
+---
+
+## ✨ Autor
+
+**Gheizla Santos**  
+Desenvolvedora de Sistemas  
+Nov/2025

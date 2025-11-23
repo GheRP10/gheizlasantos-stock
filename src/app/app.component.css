@@ -1,0 +1,81 @@
+.app-root {
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 24px;
+  background: linear-gradient(
+    90deg,
+    var(--color-header-start),
+    var(--color-header-end)
+  );
+  color: var(--color-text);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: flex;
+  gap: 12px;
+}
+
+.menu a {
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.menu a.ativo {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.right-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.theme-switch {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-text);
+  cursor: pointer;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.theme-switch:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.app-main {
+  padding: 20px;
+  flex: 1;
+}
