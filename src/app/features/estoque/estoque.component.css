@@ -1,0 +1,103 @@
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  color: #e0d4ff;
+}
+
+.card {
+  background: #111111;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.formulario h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  gap: 4px;
+  min-width: 180px;
+}
+
+input {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  background: #000;
+  color: #f2f2f2;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: none;
+  background: #9400D3;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background: #b04cff;
+}
+
+.filtro-card input {
+  max-width: 300px;
+}
+
+.tabela-card table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tabela-card th,
+.tabela-card td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #333;
+}
+
+.tabela-card thead {
+  background: #1b1b1b;
+}
+
+.positivo {
+  color: #7CFC00;
+}
+
+.negativo {
+  color: #ff6666;
+}
+
+.sem-registro {
+  text-align: center;
+  padding: 12px;
+  opacity: 0.7;
+}
+
+.btn-estorno {
+  background: #ff4444;
+}
+
+.btn-estorno:hover {
+  background: #ff6666;
+}

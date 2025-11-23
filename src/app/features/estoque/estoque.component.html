@@ -1,0 +1,69 @@
+<section class="wrapper">
+  <h1 class="titulo">Movimentações de Estoque</h1>
+
+  <div class="card formulario">
+    <h2>Lançar movimentação</h2>
+
+    <div class="linha">
+      <label>
+        Descrição
+        <input type="text" [(ngModel)]="novaDescricao" />
+      </label>
+
+      <label>
+        Cód. Produto
+        <input type="number" [(ngModel)]="novoCodigoProduto" />
+      </label>
+
+      <label>
+        Quantidade (+ entrada / - saída)
+        <input type="number" [(ngModel)]="novaQtde" />
+      </label>
+
+      <button (click)="adicionar()">Adicionar</button>
+    </div>
+  </div>
+
+  <div class="card filtro-card">
+    <label>
+      Filtrar por descrição ou código:
+      <input type="text" [(ngModel)]="filtro" />
+    </label>
+  </div>
+
+  <div class="card tabela-card">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Descrição</th>
+          <th>Cód. Produto</th>
+          <th>Qtde</th>
+          <th>Data</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let m of movimentacoes">
+          <td>{{ m.id }}</td>
+          <td>{{ m.descricao }}</td>
+          <td>{{ m.codigoProduto }}</td>
+          <td [class.positivo]="m.qtde >= 0" [class.negativo]="m.qtde < 0">
+            {{ m.qtde }}
+          </td>
+          <td>{{ m.data | date:'dd/MM/yyyy HH:mm' }}</td>
+          <td>
+            <button class="btn-estorno" (click)="estornar(m.id)">Estornar</button>
+          </td>
+        </tr>
+
+        <tr *ngIf="movimentacoes.length === 0">
+          <td colspan="6" class="sem-registro">
+            Nenhuma movimentação lançada ainda.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
