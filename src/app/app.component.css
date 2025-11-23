@@ -19,11 +19,14 @@
   );
   color: var(--color-text);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  
+  flex-wrap: wrap;
 }
 
 .logo {
   font-weight: 700;
   letter-spacing: 1px;
+  font-size: 1.1rem; 
 }
 
 .menu {
@@ -37,25 +40,16 @@
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 0.9rem;
+  transition: background 0.2s;  
 }
 
 .menu a.ativo {
   background: rgba(255, 255, 255, 0.18);
+  font-weight: 600; 
 }
 
 .menu a:hover {
   background: rgba(255, 255, 255, 0.12);
-}
-
-.right-area {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.author {
-  font-size: 0.8rem;
-  opacity: 0.9;
 }
 
 .theme-switch {
@@ -69,6 +63,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  transition: background 0.2s;
 }
 
 .theme-switch:hover {
@@ -78,4 +73,30 @@
 .app-main {
   padding: 20px;
   flex: 1;
+}
+
+/* --- AJUSTES MOBILE --- */
+@media (max-width: 650px) {
+  .app-header {
+    justify-content: center; 
+    padding: 12px 16px;
+  }
+
+  .logo {
+    margin-right: auto; 
+  }
+
+  .menu {
+    order: 3; 
+    width: 100%;
+    justify-content: center;
+    margin-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.1); 
+    padding-top: 12px;
+  }
+  
+  .menu a {
+    font-size: 0.85rem; 
+    padding: 6px 8px;
+  }
 }

@@ -1,19 +1,19 @@
 # GheizlaSantos Stock
 
-Aplicação Front-End desenvolvida em **novembro/2025**, em Angular, como resolução de um desafio técnico envolvendo módulos de **Estoque** e **Comissões**.
+Aplicação Front-End desenvolvida em **novembro/2025**, utilizando Angular 18, como resolução de um desafio técnico que envolve os módulos de **Estoque** e **Comissões**.
 
-A proposta consiste em construir uma SPA simples, funcional e organizada, demonstrando domínio de componentes, rotas, serviços, tratamento de dados e experiência de uso.
+A aplicação apresenta organização clara, experiência de uso fluida, rotas bem definidas e utilização de componentes standalone.
 
 ---
 
 ## 🚀 Tecnologias utilizadas
 
-- **Angular 18+** (projeto foi executado com Angular 18)
+- **Angular 18** (compatível com versões superiores)
 - **TypeScript**
 - **HTML5 & CSS3**
 - **Standalone Components**
-- **JSON local como base de dados**
-- **Design System próprio (Dark/Light mode)**
+- **JSON local**
+- **Tema dinâmico (Dark/Light)**
 
 ---
 
@@ -24,8 +24,6 @@ npm install
 ng serve
 ```
 
-> O projeto é compatível com Angular **18 ou superior**.
-
 ---
 
 ## 📂 Estrutura principal
@@ -33,51 +31,43 @@ ng serve
 ```
 src/
  ├── app/
- │    ├── home/           # HomePage com contextualização e acesso aos módulos
+ │    ├── core/           
  │    ├── features/
- │    │      ├── estoque/ # Módulo de movimentações de estoque
- │    │      └── comissao/# Módulo de ranking e comissões
- │    ├── services/       # Serviço de dados (estoque + vendas)
- │    └── app.component   # Header, tema, rotas
- ├── assets/              # JSON e ícones
- └── styles.css           # Tema global (dark/light)
+ │    │      ├── estoque/ 
+ │    │      ├── comissao/
+ │    │      └── home/    
+ │    ├── app.routes.ts   
+ │    └── app.component   
+ ├── assets/              
+ └── styles.css           
 ```
 
 ---
 
 ## 📊 Funcionalidades implementadas
 
-### ✔ Módulo de Estoque
-- Lançamento de movimentações  
-- Estorno  
+### ✔ Estoque
+- Lançamento e estorno de movimentações  
 - Filtro por produto  
-- Atualização dinâmica do saldo por item  
+- Registro de entradas e saídas 
 - Interface responsiva  
 
-### ✔ Módulo de Comissões
+### ✔ Comissões
 - Regras implementadas:  
-  - 1% para valores entre **R$ 100 e R$ 499,99**  
-  - 5% para valores **a partir de R$ 500**  
+  - 1% (R$ 100 a R$ 499,99)  
+  - 5% (R$ 500+)  
 - Cálculo automático por venda  
-- Somatório geral por vendedor  
-- Geração do ranking final  
-- Exibição clara e responsiva  
+- Totalização por vendedor  
+- Ranking final  
 
 ---
 
-## 📝 Observação
-- Toques pessoais citados abaixo
+## 🎨 Destaques de UI/UX
 
-### ✔ HomePage 
-- Layout inspirado em dashboards  
-- Botões de navegação  
-- Explicação dos módulos  
-- Responsividade 
-
-### ✔ Tema Claro/Escuro
-- Alternância em tempo real  
-- Ícones de sol/lua  
-- Ajuste de contraste para cada módulo  
+- **HomePage moderna:** Introdução clara e navegação rápida entre os módulos  
+- **Tema Dinâmico:** Modo Claro/Escuro com persistência via `localStorage`  
+- **Responsividade Completa:** Layout ajustado para todos os dispositivos  
+- **Formatação Brasileira:** `LOCALE_ID (pt-BR)` aplicado para moedas  
 
 ---
 

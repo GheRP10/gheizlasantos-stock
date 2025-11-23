@@ -16,10 +16,13 @@
   padding: 16px;
   margin-bottom: 16px;
   box-shadow: 0 2px 6px var(--color-card-shadow);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 table {
   width: 100%;
+  min-width: 500px;
   border-collapse: collapse;
   font-size: 0.9rem;
   text-align: center;
