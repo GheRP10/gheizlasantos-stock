@@ -2,8 +2,7 @@
 
 Aplicação Front-End desenvolvida em **novembro/2025**, utilizando Angular 18, como resolução de um desafio técnico que envolve os módulos de **Estoque** e **Comissões**.
 
-A aplicação apresenta organização clara, experiência de uso fluida, rotas bem definidas e utilização de componentes standalone.
-
+A proposta consiste em construir uma SPA (Single Page Application) simples, funcional e organizada, demonstrando domínio de componentes Standalone, rotas, injeção de dependência, tratamento de dados e experiência de uso (UX/UI).
 ---
 
 ## 🚀 Tecnologias utilizadas
