@@ -3,29 +3,55 @@
 
     <header class="hero-header">
       <p class="hero-badge">Desafio Front-End</p>
-
-      <h1 class="hero-title">
-        GheizlaSantos Stock
-      </h1>
-
-      <h2 class="hero-subtitle">
-        Consulta de Estoque &amp; Ranking de Vendas
-      </h2>
+      <h1 class="hero-title">GheizlaSantos Stock</h1>
+      <h2 class="hero-subtitle">Dashboard Geral</h2>
     </header>
+
+    <div class="dashboard-grid">
+      
+      <!-- Card 1: Vendas -->
+      <div class="dash-card">
+        <div class="dash-icon icon-vendas">💰</div>
+        <div class="dash-info">
+          <span class="dash-label">Vendas do Mês</span>
+          <strong class="dash-value">{{ totalVendas | currency:'BRL' }}</strong>
+        </div>
+      </div>
+
+      <!-- Card 2: Comissões -->
+      <div class="dash-card">
+        <div class="dash-icon icon-comissao">💸</div>
+        <div class="dash-info">
+          <span class="dash-label">Comissões Totais</span>
+          <strong class="dash-value destaque">{{ totalComissoes | currency:'BRL' }}</strong>
+        </div>
+      </div>
+
+      <!-- Card 3: Estoque -->
+      <div class="dash-card">
+        <div class="dash-icon icon-estoque">📦</div>
+        <div class="dash-info">
+          <span class="dash-label">Movimentações</span>
+          <strong class="dash-value">{{ totalMovimentacoes }}</strong>
+        </div>
+      </div>
+
+      <!-- Card 4: Top Vendedor -->
+      <div class="dash-card">
+        <div class="dash-icon icon-trofeu">🏆</div>
+        <div class="dash-info">
+          <span class="dash-label">Top Vendedor</span>
+          <strong class="dash-value text-sm">{{ topVendedor }}</strong>
+        </div>
+      </div>
+
+    </div>
+    <!-- FIM DO DASHBOARD -->
 
     <div class="hero-body">
       <p class="hero-description">
-        Esta aplicação simula parte de um sistema de gestão, reunindo dois módulos essenciais do desafio técnico:
+        Utilize os botões abaixo para acessar os módulos completos de gestão:
       </p>
-
-      <ul class="hero-list">
-        <li>
-          📦 <strong>Módulo de Estoque:</strong> Permite lançar movimentações, estornar itens e consultar entradas e saídas através de filtros.
-        </li>
-        <li>
-          💰 <strong>Módulo de Comissões:</strong> Calcula automaticamente as comissões de cada venda conforme as regras do desafio e gera o ranking final dos vendedores.
-        </li>
-      </ul>
     </div>
 
     <footer class="hero-footer">
@@ -34,7 +60,7 @@
       </button>
 
       <button class="hero-btn hero-btn-outline" routerLink="/comissao">
-        💰 Ver Ranking de Vendas
+        💰 Ranking Detalhado
       </button>
     </footer>
 

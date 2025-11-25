@@ -68,6 +68,30 @@ button:hover {
   max-width: 100%;
 }
 
+.filtro-card h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: var(--color-title);
+}
+
+.linha-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.btn-limpar {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.btn-limpar:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .tabela-card {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;

@@ -31,6 +31,31 @@
     </label>
   </div>
 
+  <div class="card filtro-card">
+  <h3>Filtros de Busca</h3>
+  
+  <div class="linha-filtros">
+    <label>
+      Busca (Texto):
+      <input type="text" [(ngModel)]="filtro" placeholder="Descrição ou Código..." />
+    </label>
+
+    <label>
+      Data Inicial:
+      <input type="date" [(ngModel)]="dataInicio" />
+    </label>
+
+    <label>
+      Data Final:
+      <input type="date" [(ngModel)]="dataFim" />
+    </label>
+
+    <button class="btn-limpar" (click)="limparFiltros()" *ngIf="filtro || dataInicio || dataFim">
+      Limpar
+    </button>
+  </div>
+</div>
+
   <div class="card tabela-card">
     <table>
       <thead>
